@@ -1,0 +1,13 @@
+on:
+  [push]
+jobs:
+  nuke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove old GitHub docker images
+        uses: CirrusMD/github-action-clean-docker-packages@rf/feature/swap-to-rest-js
+        with:
+          gh-token: ${{ secrets.GH_TOKEN_DOCKER_CLEAN }}
+          docker-package: fun-with-containers
+          dry-run: true
+          num-keep: 5
