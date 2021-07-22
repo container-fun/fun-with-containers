@@ -9,5 +9,5 @@ jobs:
         with:
           gh-token: ${{ secrets.GH_TOKEN_DOCKER_CLEAN }}
           package-name: fun-with-containers
-          dry-run: true
+          dry-run: false
           num-keep: 10
