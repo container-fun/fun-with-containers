@@ -8,6 +8,6 @@ jobs:
         uses: CirrusMD/github-action-clean-docker-packages@feature/rest-update
         with:
           gh-token: ${{ secrets.GH_TOKEN_DOCKER_CLEAN }}
-          package-name: fun-with-containers
+          package-name: fun-with-containers1
           dry-run: false
           num-keep: 10
